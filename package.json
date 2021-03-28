@@ -1,0 +1,19 @@
+{
+  "name": "alejandroherr-home-assistant-addon-influxdb2",
+  "version": "dev",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroHerr/home-assistant-addon-influxdb2.git"
+  },
+  "author": "AlejandroHerr <hola@alejandroherr.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/issues"
+  },
+  "homepage": "https://github.com/AlejandroHerr/home-assistant-addon-influxdb2#readme"
+}
