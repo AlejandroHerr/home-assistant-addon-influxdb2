@@ -21,7 +21,7 @@ jobs:
           path: "./home-assistant-addons"
           token: ${{ secrets.TOKEN }}
       - name: Copy files
-        run: mkdir ./home-assistant-addons/influxdb2 && cp -rv ./home-assistant-addon-influxdb2/* ./home-assistant-addons/influxdb2
+        run: mkdir -p ./home-assistant-addons/influxdb2 && cp -rv ./home-assistant-addon-influxdb2/* ./home-assistant-addons/influxdb2
       - name: Remove unused
         run: rm -rf ./home-assistant-addons/influxdb2/{.git,.github,Dockerfile,rootfs}
       - uses: EndBug/add-and-commit@v7
