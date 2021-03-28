@@ -1,0 +1,34 @@
+name: main
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  sync_repostiory:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: "./home-assistant-addon-influxdb2"
+          token: ${{ secrets.TOKEN }}
+      - uses: actions/checkout@v2
+        with:
+          repository: "AlejandroHerr/home-assistant-addons"
+          path: "./home-assistant-addons"
+          token: ${{ secrets.TOKEN }}
+      - name: Copy files
+        run: mkdir ./home-assistant-addons/influxdb2 && cp -rv ./home-assistant-addon-influxdb2/* ./home-assistant-addons/influxdb2
+      - name: Remove unused
+        run: rm -rf ./home-assistant-addons/influxdb2/{.git,.github,Dockerfile,rootfs}
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: "."
+          author_name: AlejandroHerr
+          author_email: ahernandezc@protonmail.com
+          branch: main
+          cwd: "./home-assistant-addons"
+          message: "chore(influxdb2): addon updated"
