@@ -1,0 +1,19 @@
+{
+  "name": "InfluxDB 2.0",
+  "version": "0.1",
+  "slug": "influxdb2",
+  "description": "Scalable datastore for metrics, events, and real-time analytics (version 2)",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "system",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "map": ["share:rw", "ssl"],
+  "ports": {
+    "8086/tcp": 8086
+  },
+  "init":false,
+  "webui":"http://[HOST]:[PORT:8086]",
+  "image": "alejandroherr/{arch}-ha-addon-influxdb2",
+  "url": "https://github.com/AlejandroHerr/home-assistant-addons/README.md"
+}

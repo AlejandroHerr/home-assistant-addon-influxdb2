@@ -1,0 +1,6 @@
+{
+  "bolt-path": "/data/influxdb/influxd.bolt",
+  "store": "bolt",
+  "storage-cache-max-memory-size": 536870912,
+  "storage-cache-snapshot-memory-size": 1073741824
+}
