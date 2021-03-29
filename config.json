@@ -1,6 +1,6 @@
 {
   "name": "InfluxDB 2.0",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "slug": "influxdb2",
   "description": "Scalable datastore for metrics, events, and real-time analytics (version 2)",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
