@@ -1,10 +1,10 @@
 {
   "name": "alejandroherr-home-assistant-addon-influxdb2",
-  "version": "dev",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/issues"
   },
-  "homepage": "https://github.com/AlejandroHerr/home-assistant-addon-influxdb2#readme"
+  "homepage": "https://github.com/AlejandroHerr/home-assistant-addon-influxdb2#readme",
+  "devDependencies": {
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
