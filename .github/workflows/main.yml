@@ -20,17 +20,6 @@ jobs:
           repository: "AlejandroHerr/home-assistant-addons"
           path: "./home-assistant-addons"
           token: ${{ secrets.TOKEN }}
-      - name: Debug 0
-        run: cat ./home-assistant-addon-influxdb2/config.json
-      - name: Debug 1
-        run: jq '.version' ./home-assistant-addon-influxdb2/config.json
-      - name: Update version
-        run: jq ".version=$(jq '.version' ./home-assistant-addon-influxdb2/config.json)" ./home-assistant-addon-influxdb2/package.json > ./home-assistant-addon-influxdb2/package.json.tmp && mv ./home-assistant-addon-influxdb2/package.json.tmp ./home-assistant-addon-influxdb2/package.json
-      - name: Generate changelog
-        uses: scottbrenner/generate-changelog-action@master
-        id: Changelog
-        with:
-          package-dir: "./home-assistant-addon-influxdb2/package.json"
       - name: Copy files
         run: mkdir -p ./home-assistant-addons/influxdb2 && cp -rv ./home-assistant-addon-influxdb2/* ./home-assistant-addons/influxdb2
       - name: Remove unused
@@ -43,11 +32,3 @@ jobs:
           branch: main
           cwd: "./home-assistant-addons"
           message: "chore(influxdb2): addon updated"
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: "."
-          author_name: AlejandroHerr
-          author_email: ahernandezc@protonmail.com
-          branch: main
-          cwd: "./home-assistant-addon-influxdb2"
-          message: "docs(changelog): update changelog [ci skip]"
