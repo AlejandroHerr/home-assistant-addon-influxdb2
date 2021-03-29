@@ -20,6 +20,10 @@ jobs:
           repository: "AlejandroHerr/home-assistant-addons"
           path: "./home-assistant-addon-influxdb2"
           token: ${{ secrets.TOKEN }}
+      - name: Debug 0
+        run: cat ./home-assistant-addon-influxdb2/config.json
+      - name: Debug 1
+        run: jq '.version' ./home-assistant-addon-influxdb2/config.json
       - name: Update version
         run: jq ".version=$(jq '.version' ./home-assistant-addon-influxdb2/config.json)" ./home-assistant-addon-influxdb2/package.json > ./home-assistant-addon-influxdb2/package.json.tmp && mv ./home-assistant-addon-influxdb2/package.json.tmp ./home-assistant-addon-influxdb2/package.json
       - name: Generate changelog
