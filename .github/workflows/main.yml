@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: "AlejandroHerr/home-assistant-addons"
-          path: "./home-assistant-addon-influxdb2"
+          path: "./home-assistant-addons"
           token: ${{ secrets.TOKEN }}
       - name: Debug 0
         run: cat ./home-assistant-addon-influxdb2/config.json
