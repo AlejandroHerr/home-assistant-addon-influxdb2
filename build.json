@@ -1,0 +1,7 @@
+
+{
+  "build_from": {
+    "aarch64": "arm64v8/influxdb:alpine",
+    "amd64" : "amd64/influxdb:alpine"
+  }
+}

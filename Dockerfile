@@ -1,4 +1,5 @@
-FROM influxdb:alpine
+ARG BUILD_FROM=influxdb:alpine
+FROM $BUILD_FROM
 
 COPY rootfs /
 
