@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/compare/v1.0.4...v1.0.5) (2021-04-07)
+
+
+### Bug Fixes
+
+* export INFLUXD_CONFIG_PATH ([28f1eef](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/commit/28f1eef98c1f42813ca8099268196d35ee197763))
+
 ### [1.0.4](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/compare/v1.0.3...v1.0.4) (2021-03-30)
 
 
