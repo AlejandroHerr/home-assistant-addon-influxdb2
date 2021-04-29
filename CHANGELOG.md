@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/compare/v1.0.7...v1.1.0) (2021-04-29)
+
+
+### Features
+
+* persist data to home assistant ([81ec00d](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/commit/81ec00d69f58124cac7c5ed656e2fa0db5da9761))
+
 ### [1.0.7](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/compare/v1.0.6...v1.0.7) (2021-04-08)
 
 ### [1.0.6](https://github.com/AlejandroHerr/home-assistant-addon-influxdb2/compare/v1.0.5...v1.0.6) (2021-04-08)
